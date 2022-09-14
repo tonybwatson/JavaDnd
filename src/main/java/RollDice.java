@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class DiceRoll {
+public class RollDice {
     public static int rollDie(String type) {
         return switch (type) {
             case "d4" -> randInt(1, 4);
