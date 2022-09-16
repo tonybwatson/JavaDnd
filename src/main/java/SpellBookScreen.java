@@ -33,7 +33,7 @@ public class SpellBookScreen extends JFrame implements ActionListener {
             JButton src = (JButton) e.getSource();
             String spellName = (String) comboBox.getSelectedItem();
             try {
-                JSONObject jsonArray = CallSpellBookApi.getSpellFromApi(spellName);
+                JSONObject jsonArray = CallApi.getJsonObjectFromApi("spells", spellName);
                 spellNameSpace.setText("Name: " + jsonArray.get("name").toString());
                 spellDescriptionSpace.setText("Description: " + jsonArray.get("desc").toString());
                 spellHigherLevelSpace.setText("Higher Level: " + jsonArray.get("higher_level").toString());
@@ -46,7 +46,6 @@ public class SpellBookScreen extends JFrame implements ActionListener {
                 spellDurationSpace.setText("Duration: " + jsonArray.get("duration").toString());
                 spellConcentrationSpace.setText("Concentration? " + jsonArray.get("concentration").toString());
                 spellCastingTimeSpace.setText("Casting Time: " + jsonArray.get("casting_time").toString());
-//                spellTextSpace.setText(CallSpellBookApi.getSpellFromApi(spellName));
             } catch (Exception ex) {
                 ex.printStackTrace();
             }

@@ -1,10 +1,10 @@
-#JavaDnD#
-##An all-in-one DnD companion app##
+#JavaDnD
+##An all-in-one DnD companion app
 
 ***Features***:
 - **Character sheets/Character creator**
   - Requires file creation/save ability
-  - HP/XP tracking
+  - HP/XP/etc. tracking
   - Ability to add a picture of character
 - **Random character creator**
   - File creation/save
@@ -12,8 +12,6 @@
   - API call
 - **Dice Roller**
   - Single and multiple dice
-  - Ability to keep rolled numbers for 
-extended period of time
 - **Feat list**
   - API call
 - **Initiative tracker**
@@ -35,6 +33,6 @@ extended period of time
 - Light/dark modes
 - Detachable/rearrangeable components (ability to move/dock components to different areas)
 - NPC generator
-- Name creator
+- Name generator
 - Plot hook generator
   - Think "mad-libs"
