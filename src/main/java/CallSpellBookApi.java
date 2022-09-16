@@ -2,6 +2,7 @@ import com.google.gson.*;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
+import org.json.JSONObject;
 
 public class CallSpellBookApi {
     public static void main(String[] args) throws Exception {
@@ -13,7 +14,7 @@ public class CallSpellBookApi {
         return spellToSearch;
     }
 
-    public static String getSpellFromApi(String spellName) throws Exception {
+    public static JSONObject getSpellFromApi(String spellName) throws Exception {
         String host = "https://www.dnd5eapi.co/api/spells/";
         String charset = "UTF-8";
 //        String query = String.format("s=%s", URLEncoder.encode(s,charset));
@@ -23,10 +24,10 @@ public class CallSpellBookApi {
         JsonParser jsonParser = new JsonParser();
         JsonElement jsonElement = jsonParser.parse(response.getBody().toString());
         String spellJsonString = gson.toJson(jsonElement);
-        System.out.println(spellJsonString);
-
+//        System.out.println(spellJsonString);
 //        System.out.println(response.getStatus());
 //        System.out.println(response.getHeaders().get("Content-Type"));
-        return spellJsonString;
+        System.out.println(response.getBody().getObject());
+        return response.getBody().getObject();
     }
 }
