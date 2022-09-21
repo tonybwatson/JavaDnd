@@ -36,3 +36,10 @@
 - Name generator
 - Plot hook generator
   - Think "mad-libs"
+
+
+Fonts: 
+Nodesto Caps Condensed
+Zatanna Misdirection
+Zatanna Misdirection Italic
+Bookman Headline Regular

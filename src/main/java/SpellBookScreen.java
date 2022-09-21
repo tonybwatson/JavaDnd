@@ -41,7 +41,9 @@ public class SpellBookScreen extends JFrame implements ActionListener {
                 spellComponentSpace.setText("Components: " + jsonArray.get("components").toString());
                 if (!jsonArray.has("material")) {
                     spellMaterialSpace.setText("Material: None");
-                } else {spellMaterialSpace.setText("Material: " + jsonArray.get("material").toString());}
+                } else {
+                    spellMaterialSpace.setText("Material: " + jsonArray.get("material").toString());
+                }
                 spellRitualSpace.setText("Ritual? " + jsonArray.get("ritual").toString());
                 spellDurationSpace.setText("Duration: " + jsonArray.get("duration").toString());
                 spellConcentrationSpace.setText("Concentration? " + jsonArray.get("concentration").toString());

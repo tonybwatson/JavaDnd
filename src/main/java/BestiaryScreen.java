@@ -5,8 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class BestiarySheet extends JFrame implements ActionListener {
-    BestiarySheet() {
+public class BestiaryScreen extends JFrame implements ActionListener {
+    BestiaryScreen() {
         JFrame jFrame;
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -18,15 +18,7 @@ public class BestiarySheet extends JFrame implements ActionListener {
 
         JLabel chooseAMonster = new JLabel("Choose a monster:");
         JLabel monsterNameSpace = new JLabel("...");
-//        JLabel monsterDescriptionSpace = new JLabel();
-//        JLabel monsterHigherLevelSpace = new JLabel();
-//        JLabel monsterRangeSpace = new JLabel();
-//        JLabel monsterComponentSpace = new JLabel();
-//        JLabel monsterMaterialSpace = new JLabel();
-//        JLabel monsterRitualSpace = new JLabel();
-//        JLabel monsterDurationSpace = new JLabel();
-//        JLabel monsterConcentrationSpace = new JLabel();
-//        JLabel monsterCastingTimeSpace = new JLabel();
+
 
 
         getMonsterButton.addActionListener(e -> {
@@ -80,7 +72,7 @@ public class BestiarySheet extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new BestiarySheet();
+        new BestiaryScreen();
     }
 
     @Override
